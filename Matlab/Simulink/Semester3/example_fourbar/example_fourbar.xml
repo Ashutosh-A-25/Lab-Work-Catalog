@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Created by="" on="" using="" from=""/>
+  <ModelUnits mass="kilogram" length="meter"/>
+  <DataUnits mass="kilogram" length="meter"/>
+  <RootAssembly name="fourbar" uid="fourbar" version="">
+    <AssemblyFile name="" type=""/>
+    <InstanceTree>
+      <Instance name="base-1" uid="base-1" grounded="true" entityUid="base*:*Default">
+        <Transform>
+          <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+          <Translation>0 0 0</Translation>
+        </Transform>
+      </Instance>
+      <Instance name="Bar1-1" uid="Bar1-1" entityUid="Bar1*:*Default">
+        <Transform>
+          <Rotation>0.1052926916019685 -0.99444127483487565 0 0.99444127483487565 0.1052926916019685 0 0 0 1</Rotation>
+          <Translation>1.1051688687333792 0.15211761827556947 0</Translation>
+        </Transform>
+      </Instance>
+      <Instance name="Bar2-1" uid="Bar2-1" entityUid="Bar2*:*Default">
+        <Transform>
+          <Rotation>-0.87017561496118057 -0.49274171644679254 2.2492214980761317e-016 -0.49274171644679254 0.87017561496118057 -1.1159478183398126e-016 -1.4073436567983754e-016 -2.0793558407193945e-016 -1</Rotation>
+          <Translation>1.1497737589013293 1.5545503063735653 0</Translation>
+        </Transform>
+      </Instance>
+      <Instance name="Bar3-1" uid="Bar3-1" entityUid="Bar3*:*Default">
+        <Transform>
+          <Rotation>-0.50000000000000122 0.86602540378443815 0 -0.86602540378443815 -0.50000000000000122 0 0 0 1</Rotation>
+          <Translation>-0.97535999999999978 0.32157045407520524 0</Translation>
+        </Transform>
+      </Instance>
+    </InstanceTree>
+    <Joints>
+      <Revolute  name="Revolute4">
+        <BaseFrame>
+          <InstancePath>
+            <Uid>base-1</Uid>
+          </InstancePath>
+          <Transform>
+            <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+            <Translation>1.0998199999999998 0.10160000151395798 0</Translation>
+          </Transform>
+        </BaseFrame>
+        <FollowerFrame>
+          <InstancePath>
+            <Uid>Bar1-1</Uid>
+          </InstancePath>
+          <Transform>
+            <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+            <Translation>-0.050799999999999956 0 0</Translation>
+          </Transform>
+        </FollowerFrame>
+      </Revolute>
+      <Revolute  name="Revolute22">
+        <BaseFrame>
+          <InstancePath>
+            <Uid>Bar1-1</Uid>
+          </InstancePath>
+          <Transform>
+            <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+            <Translation>1.4731999999999996 0 0</Translation>
+          </Transform>
+        </BaseFrame>
+        <FollowerFrame>
+          <InstancePath>
+            <Uid>Bar2-1</Uid>
+          </InstancePath>
+          <Transform>
+            <Rotation>-1 0 0 0 1 0 0 0 -1</Rotation>
+            <Translation>-0.12700000000000022 0 0</Translation>
+          </Transform>
+        </FollowerFrame>
+      </Revolute>
+      <Revolute  name="Revolute35">
+        <BaseFrame>
+          <InstancePath>
+            <Uid>base-1</Uid>
+          </InstancePath>
+          <Transform>
+            <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+            <Translation>-1.10236 0.10160000151395798 0</Translation>
+          </Transform>
+        </BaseFrame>
+        <FollowerFrame>
+          <InstancePath>
+            <Uid>Bar3-1</Uid>
+          </InstancePath>
+          <Transform>
+            <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+            <Translation>0.25400000000000011 -1.1102230246251565e-016 0</Translation>
+          </Transform>
+        </FollowerFrame>
+      </Revolute>
+      <Revolute  name="Revolute44">
+        <BaseFrame>
+          <InstancePath>
+            <Uid>Bar2-1</Uid>
+          </InstancePath>
+          <Transform>
+            <Rotation>0 1 0 1 0 0 0 0 -1</Rotation>
+            <Translation>2.4130000000000003 -1.1102230246251565e-016 0</Translation>
+          </Transform>
+        </BaseFrame>
+        <FollowerFrame>
+          <InstancePath>
+            <Uid>Bar3-1</Uid>
+          </InstancePath>
+          <Transform>
+            <Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+            <Translation>-0.050800000000000012 0 0</Translation>
+          </Transform>
+        </FollowerFrame>
+      </Revolute>
+    </Joints>
+  </RootAssembly>
+  <Assemblies>
+  </Assemblies>
+  <Parts>
+    <Part name="Bar1" uid="Bar1*:*Default" version="">
+      <ModelUnits mass="kilogram" length="meter"/>
+      <PartFile name="" type=""/>
+      <MassProperties>
+        <Mass>87.791065235476154</Mass>
+        <CenterOfMass>0.66880241274298424 0 0</CenterOfMass>
+        <Inertia>0.1132173556458633 15.086194729407513 15.086778050686465 3.998473254071432e-010 0 0</Inertia>
+      </MassProperties>
+      <GeometryFile name="Bar1_Default_sldprt.STEP" type="STEP"/>
+      <VisualProperties>
+        <Ambient r="0.71764705882352942" g="0.85882352941176465" b="1" a="1"/>
+        <Diffuse r="0.71764705882352942" g="0.85882352941176465" b="1" a="1"/>
+        <Specular r="0.71764705882352942" g="0.85882352941176465" b="1" a="1"/>
+        <Emissive r="0" g="0" b="0" a="1"/>
+        <Shininess>0.3125</Shininess>
+      </VisualProperties>
+    </Part>
+    <Part name="Bar2" uid="Bar2*:*Default" version="">
+      <ModelUnits mass="kilogram" length="meter"/>
+      <PartFile name="" type=""/>
+      <MassProperties>
+        <Mass>147.94631933334216</Mass>
+        <CenterOfMass>1.1193508241535064 0 0</CenterOfMass>
+        <Inertia>0.19059582293679134 71.680755498371852 71.680856659389164 6.0796713954143392e-010 0 0</Inertia>
+      </MassProperties>
+      <GeometryFile name="Bar2_Default_sldprt.STEP" type="STEP"/>
+      <VisualProperties>
+        <Ambient r="0.84313725490196079" g="0.84313725490196079" b="0" a="1"/>
+        <Diffuse r="0.84313725490196079" g="0.84313725490196079" b="0" a="1"/>
+        <Specular r="0.84313725490196079" g="0.84313725490196079" b="0" a="1"/>
+        <Emissive r="0" g="0" b="0" a="1"/>
+        <Shininess>0.3125</Shininess>
+      </VisualProperties>
+    </Part>
+    <Part name="Bar3" uid="Bar3*:*Default" version="">
+      <ModelUnits mass="kilogram" length="meter"/>
+      <PartFile name="" type=""/>
+      <MassProperties>
+        <Mass>16.235035467308808</Mass>
+        <CenterOfMass>0.088596943572427117 0 0</CenterOfMass>
+        <Inertia>0.021730930206375003 0.11647576413030759 0.11657693956456296 1.8132152356289693e-010 0 0</Inertia>
+      </MassProperties>
+      <GeometryFile name="Bar3_Default_sldprt.STEP" type="STEP"/>
+      <VisualProperties>
+        <Ambient r="0" g="0.75686274509803919" b="0.38039215686274508" a="1"/>
+        <Diffuse r="0" g="0.75686274509803919" b="0.38039215686274508" a="1"/>
+        <Specular r="0" g="0.75686274509803919" b="0.38039215686274508" a="1"/>
+        <Emissive r="0" g="0" b="0" a="1"/>
+        <Shininess>0.3125</Shininess>
+      </VisualProperties>
+    </Part>
+    <Part name="base" uid="base*:*Default" version="">
+      <ModelUnits mass="kilogram" length="centimeter"/>
+      <PartFile name="" type=""/>
+      <MassProperties>
+        <Mass>137.40033482973283</Mass>
+        <CenterOfMass>-0.0077813265433721744 0.026749180387143988 -2.3762295925221416e-008</CenterOfMass>
+        <Inertia>0.30413902528144654 62.348097237484197 62.128850011240758 9.3810648715321096e-008 -1.0853413561902065e-007 0.066902506635830472</Inertia>
+      </MassProperties>
+      <GeometryFile name="base_Default_sldprt.STEP" type="STEP"/>
+      <VisualProperties>
+        <Ambient r="1" g="0.50196078431372548" b="0.50196078431372548" a="1"/>
+        <Diffuse r="1" g="0.50196078431372548" b="0.50196078431372548" a="1"/>
+        <Specular r="1" g="0.50196078431372548" b="0.50196078431372548" a="1"/>
+        <Emissive r="0" g="0" b="0" a="1"/>
+        <Shininess>0.3125</Shininess>
+      </VisualProperties>
+    </Part>
+  </Parts>
+</SimscapeMultibodyImportXML>

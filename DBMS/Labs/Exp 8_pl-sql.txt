@@ -1,0 +1,11 @@
+Write a PL/SQL structure to find
+
+1.Greatest among three numbers.
+
+2.Factorial.
+
+3.Fibonnaci series.
+
+4.Armstrong number or not.
+
+5.Addition, subtraction, multiplication and division of two numbers using ‘case’.

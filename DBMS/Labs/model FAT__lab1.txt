@@ -1,0 +1,21 @@
+Consider the company database. The schemas are
+1.employee(eno,ename,dob,gender,doj,designation,basicpay,dno)
+2.department(dno,dname)
+3.project(pno,pname,dno)
+4.workfor(eno,pno,dateworked,intime,outtime)
+
+Queries
+1.Create a table called employee with all details.
+2.Display employee details who have joined in the month of July.
+3.Display employee name who is working in marketing & finance department
+4.Display employee details whose middle name starts with 'I'.
+5.Display distinct area of all employee.
+6.Display employee details whose age is in-between 30 & 35.
+7.Give average salary of all employees.
+8.Count the number of employee who are working in Finance department.
+9.Delete records of employee who belong to ‘General’ department.
+10.List the details of employees who earn a basic pay that is less than the average basic pay of every employees.
+11.List the dno,no_of_employees in each department
+12.List the details of employees who have worked in the projects controlled by cse department
+13.Write a pl/sql program to find the sum &avg basicpay of all the employees using procedures. 
+
